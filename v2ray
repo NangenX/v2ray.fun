@@ -86,11 +86,12 @@ if [[ ${choice} == 2 ]]; then
     echo "5.更改TLS设置"
     echo "6.更改广告拦截功能"
     echo "7.更改alterId"
+    echo "8.新增新用户
     echo "请输入数字选择功能："
 
     while :; do echo
 	    read -n1 -p "请选择： " changechoice
-	    if [[ ! $changechoice =~ ^[1-7]$ ]]; then
+	    if [[ ! $changechoice =~ ^[1-8]$ ]]; then
             if [[ -z ${changechoice} ]];then
                 bash /usr/local/bin/v2ray
                 exit 0
